@@ -72,3 +72,9 @@ header {
 .content .controls input:focus {
   outline: none;
 }
+#divs{
+   color: aliceblue;
+  background-color: aqua;
+  width: 200px;
+   
+}

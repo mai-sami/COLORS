@@ -84,3 +84,16 @@ input.addEventListener("keyup", (e) => {
   // run the generateHexaCode function  use the input value
   array && generateHexaCode(value);
 });
+ 
+     document.getElementById("buttons").addEventListener("mouseenter", (e) => {
+      //  change color every 500ms
+      let interval = setInterval(() => {
+        generateHexaCode();
+      }, 500);
+      document.getElementById("buttons").addEventListener("mouseleave", () => {
+        clearInterval(interval);// when mouse leave the random stop(clear intervel)
+      });
+     })
+   
+ 
+ 
