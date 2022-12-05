@@ -68,9 +68,9 @@ input.addEventListener("keyup", (e) => {
   console.log(value, "value here!!!!!!!!!!!")
 
   //  return nothing if for this conditions
-  if (!(value.length == 7 && value[0] === "#")) return
+  if (!(value.length == 7 && value[0] === "#"))  
 
-  alert("the value is not valid"); //to check value input;
+  return  alert("the value is not valid"); //to check value input;
   // using the reduce to check value, if the characters in hexaCodeCharacters array
   const array = value
     .slice(1)
