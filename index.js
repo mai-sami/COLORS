@@ -1,6 +1,8 @@
 // get all elements to controll and use it
 const box = document.querySelector(".box");
 const boxColor = document.getElementById("box_color");
+//const box__changeCOLOr = document.getElementById("box");
+
 // change text in box
 boxColor.textContent = "PANT ME"
 const btn = document.querySelector("button");
@@ -85,12 +87,12 @@ input.addEventListener("keyup", (e) => {
   array && generateHexaCode(value);
 });
  
-     document.getElementById("buttons").addEventListener("mouseenter", (e) => {
+document.getElementById("box").addEventListener("mouseenter", (e) => {
       //  change color every 500ms
       let interval = setInterval(() => {
         generateHexaCode();
       }, 500);
-      document.getElementById("buttons").addEventListener("mouseleave", () => {
+      document.getElementById("box").addEventListener("mouseleave", () => {
         clearInterval(interval);// when mouse leave the random stop(clear intervel)
       });
      })
